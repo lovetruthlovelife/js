@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form属性示例</title>
+    <meta charset="UTF-8">
+    <style>
+        fieldset {
+            width: 300px;
+        }
+        
+        legend {
+            color: red;
+        }
+        /* legend span {
+            width: 500px;
+        } */
+        
+        button {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend><span>学生档案</span></legend>
+        <form id="testform" method="get" action="#S">
+            姓名：<br>
+            <input type="text" name="name1" required placeholder="请输入姓名" autofocus="autofocus" autocomplete="on">
+            <br/> 学号：<br>
+            <input type="number" name="num1" required placeholder="请输入学号" autocomplete="on">
+            <br> 手机号码：<br>
+            <input type="number" name="num2" required placeholder="请输入手机号" autocomplete="on">
+            <br>邮箱地址：<br>
+            <input type="email" name="email" placeholder="请输入邮箱地址" required/>
+            <br>录取学校:<br>
+            <input type="search" name="sea1" list="names" />
+            <datalist id="names">
+                <option>河北师范大学</option>
+                <option>北京师范大学</option>
+                <option>清华大学</option>
+                <option>北京大学</option>
+            </datalist>
+            <br>入学成绩:<br>
+            <input type="number" name="num3" placeholder="请输入手机号" autocomplete="on">
+            <!-- <input type="file" name="file1" multiple> -->
+            <br>入学日期：<br>
+            <input type="date" name="date1" /><br>
+            <input type="submit" value="提交" />
+        </form>
+        <!-- <br/> 自我介绍：
+        <textarea name="textarea1" form="testform"></textarea> -->
+    </fieldset>
+</body>
+
+</html>
